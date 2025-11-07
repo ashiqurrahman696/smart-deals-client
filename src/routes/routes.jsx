@@ -35,7 +35,7 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/update/:id",
-                loader: ({params}) => fetch(`https://smart-deals-server-beryl.vercel.app//products/${params.id}`),
+                loader: ({params}) => fetch(`https://smart-deals-server-beryl.vercel.app/products/${params.id}`),
                 element: <PrivateRoute>
                     <UpdateProduct/>
                 </PrivateRoute>,
